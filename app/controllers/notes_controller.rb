@@ -11,6 +11,17 @@ class NotesController < ApplicationController
     else
       @notes = Note.all
     end
+
+    if params["email"].present?
+      @notes = @notes.joins('join users on users.id = notes.user_id').where('users.email like ?', "%#{params["email"]}%")
+    end
+    if params["sort"].present?
+      if params["sort"] == "ASC"
+        @notes = @notes.order('notes.created_at ASC')
+      else
+        @notes = @notes.order('notes.created_at DESC')
+      end
+    end
   end
 
   # GET /notes/1
@@ -82,6 +93,6 @@ class NotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_params
-      params.require(:note).permit(:title, :content)
+      params.require(:note).permit(:title, :content, :image, :email)
     end
 end
