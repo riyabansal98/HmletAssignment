@@ -46,6 +46,7 @@ class NotesController < ApplicationController
       tags = params["tags"].split(",")
       @note.tags << Tag.all.where('name in (?)', tags)
     end
+    @note.user_id = current_user.id
     respond_to do |format|
       if @note.save
         format.html { redirect_to @note, notice: 'Note was successfully created.' }
