@@ -45,6 +45,7 @@ $ rake db:migrate
 ```
 $ rake db:seed
 ```
+
 5. Run  the rails server using the command line simply using,
 ```
 $ rails server
