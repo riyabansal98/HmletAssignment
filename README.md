@@ -31,7 +31,7 @@ Hosted Project URl: https://blooming-mountain-89537.herokuapp.com/notes/1
 
 1. Clone the Repository
 ```
-$ git clone https://github.com/riyabansal98/GrofersNotesApp.git
+$ git clone https://github.com/riyabansal98/HmletAssignment.git
 ```
 2. Install the gems
 ```
