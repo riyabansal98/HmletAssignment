@@ -1,7 +1,8 @@
-# GrofersNotesApp
 
 A web-based note-taking app aimed to have both a **simple** interface but keeping **smart** behavior. <br>
 The app is built using Ruby on Rails. 
+
+Hosted Project URl: https://blooming-mountain-89537.herokuapp.com/notes/1
 
 ![Screenshot 2019-12-22 at 1 52 09 AM](https://user-images.githubusercontent.com/35702912/71313359-c42c0880-245d-11ea-8531-d70f36e79bb6.png)
 
@@ -95,7 +96,7 @@ Eg: Lets delete the note new year plans.
 ### Display a Note:
 To view a particular note, click on the button show. 
 
-![Screenshot 2019-12-22 at 1 59 53 AM](https://user-images.githubusercontent.com/35702912/71313436-cd69a500-245e-11ea-8ad5-2de150a95ea0.png)
+![Screenshot 2020-03-28 at 12 45 44 AM](https://user-images.githubusercontent.com/29747452/77791951-83abde80-708d-11ea-96a9-090fff7cbe0e.png)
 
 ### User Authentication:
 
